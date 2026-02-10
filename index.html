@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehmed the Conqueror - Fatih Sultan Mehmet</title>
+    <style>
+        /* Ottoman flag inspired colors */
+        :root {
+            --ottoman-red: #c8102e;
+            --ottoman-green: #006400;
+            --gold: #d4a017;
+            --dark-bg: #1a1a1a;
+            --light-text: #f0f0f0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--ottoman-red);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 8px solid var(--ottoman-green);
+        }
+
+        h1 {
+            margin: 0;
+            color: white;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        nav {
+            background-color: var(--ottoman-green);
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        main {
+            flex: 3;
+            min-width: 300px;
+        }
+
+        aside {
+            flex: 1;
+            min-width: 280px;
+            text-align: center;
+        }
+
+        .portrait {
+            width: 100%;
+            max-width: 320px;
+            border: 8px solid var(--ottoman-green);
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.7);
+            margin-bottom: 12px;
+        }
+
+        .flag {
+            width: 180px;
+            margin: 20px auto 8px;
+            display: block;
+            border: 4px solid var(--ottoman-red);
+            border-radius: 6px;
+        }
+
+        .stamp {
+            width: 100%;
+            max-width: 240px;
+            border: 6px solid var(--gold);
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+            margin: 20px auto 8px;
+            display: block;
+        }
+
+        .caption {
+            font-size: 0.95em;
+            color: var(--gold);
+            margin: 0 0 15px 0;
+            font-style: italic;
+        }
+
+        h2 {
+            color: var(--gold);
+            border-bottom: 3px solid var(--ottoman-green);
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.05em;
+        }
+
+        ol, ul {
+            padding-left: 30px;
+            font-size: 1.05em;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: var(--ottoman-green);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fatih Sultan Mehmet</h1>
+        <p>The Conqueror of Constantinople</p>
+    </header>
+
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="2page.html">Conquest of Constantinople</a>
+    <a href="3page.html">Ottoman Empire</a>
+    <a href="4page.html">Feedback</a>
+</nav>
+
+    <div class="container">
+
+        <main>
+
+            <section id="intro">
+                <h2>Introduction</h2>
+                <p>
+                    <span class="highlight">Mehmed II</span>, known as <strong>Fatih</strong> ("the Conqueror"), was the seventh sultan of the Ottoman Empire.
+                    He ruled from 1444-1446 and then again from <strong>1451-1481</strong>. He is most famous for conquering Constantinople in 1453 at the age of 21,
+                    ending the Byzantine Empire after more than 1,100 years and transforming the city into the new Ottoman capital — Istanbul.
+                </p>
+                <p>
+                    Mehmed was a brilliant military strategist, scholar, poet, and patron of the arts. He spoke several languages and was deeply interested in science, philosophy, and religion.
+                </p>
+            </section>
+
+            <section id="reign">
+                <h2>His Reign - Major Events</h2>
+                <ol>
+                    <li>First accession to the throne (1444-1446) at age 12</li>
+                    <li>Second and permanent reign begins in <strong>1451</strong></li>
+                    <li>Conquest of Constantinople - May 29, <strong>1453</strong></li>
+                    <li>Conquest of Serbia (1459), Morea (1460), Bosnia (1463)</li>
+                    <li>Conquests in Anatolia and the Black Sea region (Trabzon 1461, Genoese colonies)</li>
+                    <li>Campaigns against Wallachia, Moldavia, and the Knights of Rhodes</li>
+                    <li>Death in 1481 during a campaign (possibly poisoned)</li>
+                </ol>
+            </section>
+
+            <section id="titles">
+                <h2>Titles</h2>
+                <ul>
+                    <li>Sultan of the Ottoman Empire</li>
+                    <li><span class="highlight">Fatih</span> - The Conqueror</li>
+                    <li>Padishah</li>
+                    <li>Kayser-i Rum (Caesar of Rome)</li>
+                    <li>Sultan of the Two Lands</li>
+                    <li>Khan of the Two Seas</li>
+                    <li>Protector of the Two Holy Cities</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <aside>
+            <img src="Html home work/mehmet.jpg" alt="Portrait of Fatih Sultan Mehmet" class="portrait">
+            <p class="caption">Fatih Sultan Mehmet</p>
+
+            <img src="Html home work/flag.png" alt="Ottoman Empire Flag" class="flag">
+            <p class="caption">Ottoman Empire Flag</p>
+
+            <img src="Html home work/stamp.png" alt="Tughra of Mehmed II" class="stamp">
+            <p class="caption">Tughra of Mehmed II</p>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>HTML & CSS Homework - Tribute to Fatih Sultan Mehmet</p>
+    </footer>
+
+</body>
+</html>

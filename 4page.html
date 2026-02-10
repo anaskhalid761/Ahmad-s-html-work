@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Fatih & Ottoman Legacy</title>
+    <style>
+        /* Same Ottoman flag inspired colors */
+        :root {
+            --ottoman-red: #c8102e;
+            --ottoman-green: #006400;
+            --gold: #d4a017;
+            --dark-bg: #1a1a1a;
+            --light-text: #f0f0f0;
+            --form-bg: #222;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--ottoman-red);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 8px solid var(--ottoman-green);
+        }
+
+        h1 {
+            margin: 0;
+            color: white;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        nav {
+            background-color: var(--ottoman-green);
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        main {
+            flex: 3;
+            min-width: 300px;
+        }
+
+        aside {
+            flex: 1;
+            min-width: 280px;
+            text-align: center;
+        }
+
+        .stamp {
+            width: 100%;
+            max-width: 240px;
+            border: 6px solid var(--gold);
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+            margin: 20px auto 8px;
+            display: block;
+        }
+
+        .caption {
+            font-size: 0.95em;
+            color: var(--gold);
+            margin: 0 0 15px 0;
+            font-style: italic;
+        }
+
+        h2 {
+            color: var(--gold);
+            border-bottom: 3px solid var(--ottoman-green);
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        form {
+            background-color: var(--form-bg);
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid var(--ottoman-green);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+        }
+
+        label {
+            display: block;
+            margin: 12px 0 6px;
+            font-weight: bold;
+            color: var(--light-text);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid var(--ottoman-green);
+            border-radius: 6px;
+            background-color: #333;
+            color: white;
+            font-size: 1em;
+        }
+
+        input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        .radio-group {
+            margin: 15px 0;
+        }
+
+        button {
+            background-color: var(--ottoman-red);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--gold);
+            color: black;
+        }
+
+        .highlight {
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: var(--ottoman-green);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Share Your Feedback</h1>
+        <p>Your thoughts about Fatih Sultan Mehmet & the Ottoman Legacy</p>
+    </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="2page.html">Conquest of Constantinople</a>
+    <a href="3page.html">Ottoman Empire</a>
+    <a href="4page.html">Feedback</a>
+</nav>
+
+    <div class="container">
+
+        <main>
+
+            <section id="feedback">
+                <h2>Tell Us What You Think</h2>
+                <p>
+                    We would love to hear your opinion about Fatih Sultan Mehmet, the conquest of Constantinople, 
+                    or the history of the Ottoman Empire. Your feedback helps us improve!
+                </p>
+
+                <form action="#" method="post">
+                    
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                    <label class="radio-group">Purpose of your message:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="question" name="purpose" value="question" checked>
+                        <label for="question">Question</label><br>
+
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        <label for="suggestion">Suggestion</label><br>
+
+                        <input type="radio" id="appreciation" name="purpose" value="appreciation">
+                        <label for="appreciation">Appreciation / Comment</label><br>
+
+                        <input type="radio" id="other" name="purpose" value="other">
+                        <label for="other">Other</label>
+                    </div>
+
+                    <label for="topic">Topic:</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">-- Select a topic --</option>
+                        <option value="fatih">Fatih Sultan Mehmet</option>
+                        <option value="conquest">Conquest of Constantinople (1453)</option>
+                        <option value="empire">Ottoman Empire History</option>
+                        <option value="design">Website Design & Colors</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="message">Your Message / Feedback:</label>
+                    <textarea id="message" name="message" rows="8" placeholder="Write your thoughts here..." required></textarea>
+
+                    <button type="submit">Send Feedback</button>
+                </form>
+
+                <p style="margin-top: 20px; font-size: 0.95em;">
+                    <em>Note: This is a demo form for HTML homework. No data is actually sent.</em>
+                </p>
+
+            </section>
+
+        </main>
+
+
+    </div>
+
+    <footer>
+        <p>HTML & CSS Homework – Tribute to Fatih Sultan Mehmet</p>
+    </footer>
+
+</body>
+</html>
